@@ -1,0 +1,36 @@
+ 
+ 
+ body {
+    background-color: rgb(114, 56, 56);
+ }
+ 
+ .Calculator {
+    display: grid;
+    background-color: rgb(102, 102, 112);
+    place-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+ }
+
+ .Calculator-grid-display {
+    background-color: red;
+ }
+
+ .Calculator-grid-body {
+    display: inline-grid;
+    background-color: blue;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+
+ }
+
+ .Calculator-grid-body button {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+ }
+
+
