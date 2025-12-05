@@ -22,6 +22,7 @@
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
+    height: 5vh;
  }
 
 
@@ -38,6 +39,7 @@
     text-align: center; 
     cursor: pointer;
     font-size: 2rem;
+    border-radius: 10px;
  }
 
 

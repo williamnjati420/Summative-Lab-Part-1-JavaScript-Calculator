@@ -12,29 +12,28 @@
     <div class="Calculator">
 
     <div class="Calculator-grid-display">
-        <div class="previous-operand">3413144131313</div>
-        <div class="current-operand">1314141413131</div>
+        <input id="display" readonly>
     </div>
 
     <div class="Calculator-grid-body">
-    <button id="all-clear"> AC </button>
-    <button id="delete"> DEL</button>
-    <button id="division">/</button>
-    <button id="multiplication">*</button>
-    <button id="addition">+</button>
-    <button id="subtraction">-</button>
-    <button id="equals">=</button>
-    <button id="point">.</button>
-    <button id="one">1</button>
-    <button id="two">2</button>
-    <button id="three">3</button>
-    <button id="four">4</button>
-    <button id="five">5</button>
-    <button id="six">6</button>
-    <button id="seven">7</button>
-    <button id="eight">8</button>
-    <button id="nine">9</button>
-    <button id="zero">0</button>
+    <button onclick="clearDisplay()" id="all-clear"> AC </button>
+    <button onclick="appendToDisplay('/')" id="division">/</button>
+    <button onclick="appendToDisplay('*')" id="multiplication">*</button>
+    <button onclick="appendToDisplay('+')" id="addition">+</button>
+    <button onclick="appendToDisplay('-')" id="subtraction">-</button>
+    <button onclick="calculate()" id="equals">=</button>
+    <button onclick="appendToDisplay('.')" id="point">.</button>
+    <button onclick="appendToDisplay('1')" id="one">1</button>
+    <button onclick="appendToDisplay('2')" id="two">2</button>
+    <button onclick="appendToDisplay('3')" id="three">3</button>
+    <button onclick="appendToDisplay('4')" id="four">4</button>
+    <button onclick="appendToDisplay('5')" id="five">5</button>
+    <button onclick="appendToDisplay('6')" id="six">6</button>
+    <button onclick="appendToDisplay('7')" id="seven">7</button>
+    <button onclick="appendToDisplay('8')" id="eight">8</button>
+    <button onclick="appendToDisplay('9')" id="nine">9</button>
+    <button onclick="appendToDisplay('0')" id="zero">0</button>
+    <!-- <button onclick="appendToDisplay" id="delete"> DEL</button> -->
     </div>
 
     </div>
