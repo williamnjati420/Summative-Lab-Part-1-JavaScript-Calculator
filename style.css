@@ -23,7 +23,7 @@
     justify-content: space-around;
     flex-direction: column;
     height: 5vh;
- }
+  }
 
 
  .Calculator-grid-body {
@@ -42,4 +42,11 @@
     border-radius: 10px;
  }
 
+ .Calculator-grid-body button:hover {
+    background-color: grey;
+ }
+
+  .Calculator-grid-body button:active {
+    background-color: goldenrod;
+ }
 

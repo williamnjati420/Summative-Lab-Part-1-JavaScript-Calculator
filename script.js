@@ -1,3 +1,6 @@
+
+//TESTING BUTTONS//
+
 // One button
 
 const oneButton = document.getElementById("one");
@@ -138,35 +141,47 @@ allClearButton.addEventListener ('click', e => {
     console.log (e.target.innerHTML)
 })
 
-// // Delete button
+// Delete button
 
-// const deleteButton = document.getElementById ("delete")
+const deleteButton = document.getElementById ("deleteNumber")
 
-// deleteButton.addEventListener ('click', e => {
-//     console.log (e.target.innerHTML)
-// })
-
+deleteButton.addEventListener ('click', e => {
+    console.log (e.target.innerHTML)
+})
 
 
 // CALCULATIONS //
 
+const historyArray = [];
 const display = document.getElementById ("display"); 
 
 function appendToDisplay (input) {
     display.value += input;
 }
 
+
 function clearDisplay () {    
     display.value = ""
 }
+
 
 function calculate () {
 
     try{
         display.value = eval(display.value);
+        historyArray.push(display.value);
+        console.log (historyArray);
     }
 
     catch (error) {
         display.value = "Error"
     }
+}
+ 
+function deleteNo () {
+    display.value = display.value.slice (0,-1);
+}
+
+function calulationHistory () {
+    appendToDisplay (historyArray);
 }
